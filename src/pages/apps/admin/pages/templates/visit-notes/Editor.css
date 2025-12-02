@@ -1,0 +1,19 @@
+/* This targets the actual editable div inside EditorContent */
+.ProseMirror {
+    min-height: 150px;
+    max-height: 250px;
+    padding: 0 16px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    border: none;
+    outline: none;
+  }
+  
+  /* Remove border/outline when focused */
+  .ProseMirror:focus,
+  .ProseMirror:focus-visible {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  

@@ -1,0 +1,11 @@
+/* Add global styles here*/
+
+body {
+  background-color: 'Neutral.80';
+}
+/* Quill editor styles */
+.ql-editor {
+  font-family: Roboto;
+  min-height: 100px;
+  /* overflow-y: scroll; */
+}

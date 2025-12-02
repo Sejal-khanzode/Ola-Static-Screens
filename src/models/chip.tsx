@@ -1,0 +1,194 @@
+export type StatusEnum =
+  | 'ACTIVE'
+  | 'INACTIVE'
+  | 'ARCHIVED'
+  | 'FAILED'
+  | 'CLOSED'
+  | 'NEW'
+  | 'PENDING'
+  | 'CANCELLED'
+  | 'SCHEDULED'
+  | 'CHECKED_IN'
+  | 'IN_EXAM'
+  | 'SEEN'
+  | 'SIGNED_OFF'
+  | 'NO_SHOW'
+  | 'SIGNED'
+  | 'UNSIGNED'
+  | 'NEED_RESULT'
+  | 'RESULT_READY'
+  | 'NEEDS_REVIEW'
+  | 'REOPENED'
+  | 'NEED_SUBMISSION'
+  | 'NEW_PATIENT'
+  | 'MULTISPECIALITY'
+  | 'PROCESSED'
+  | 'APPROVED'
+  | 'REJECTED'
+  | 'DRAFT'
+  | 'ASSIGNED'
+  | 'SUBMITTED'
+  | 'PRIMARY'
+  | 'NON_BILLABLE'
+  | 'BILLABLE_INSURANCE'
+  | 'BILLABLE_SELF_PAY'
+  | 'UNPAID'
+  | 'READY_TO_CLAIM'
+  | 'PAID';
+
+export const statusLabels = {
+  ACTIVE: 'Active',
+  INACTIVE: 'Inactive',
+  ARCHIVED: 'Archived',
+  FAILED: 'Failed',
+  CLOSED: 'Closed',
+  NEW: 'New',
+  PENDING: 'Pending',
+  SIGNED: 'Signed',
+  UNSIGNED: 'Unsigned',
+  NEED_RESULT: 'Need Result',
+  RESULT_READY: 'Result Ready',
+  NEEDS_REVIEW: 'Needs Review',
+  REOPENED: 'Reopened',
+  NEED_SUBMISSION: 'Need Submission',
+  NEW_PATIENT: 'New Patient',
+  MULTISPECIALITY: 'Multispeciality',
+  CANCELLED: 'Cancelled',
+  SCHEDULED: 'Scheduled',
+  CHECKED_IN: 'Checked In',
+  IN_EXAM: 'In Exam',
+  SEEN: 'Seen',
+  SIGNED_OFF: 'Signed Off',
+  NO_SHOW: 'No Show',
+  PROCESSED: 'Processed',
+  REJECTED: 'Rejected',
+  APPROVED: 'Approved',
+  DRAFT: 'Draft',
+  ASSIGNED: 'Assigned',
+  SUBMITTED: 'Completed',
+  PRIMARY: 'Primary',
+  NON_BILLABLE: 'Non billable',
+  BILLABLE_INSURANCE: 'Billing (Insurance)',
+  BILLING_SELF_PAY: 'Billing (Self-Pay)',
+  UNPAID: 'Unpaid',
+  PAID: 'Paid',
+  READY_TO_CLAIM: 'Ready To Claim',
+};
+
+export const statusLabelsUppercase = {
+  ACTIVE: 'ACTIVE',
+  INACTIVE: 'INACTIVE',
+  ARCHIVED: 'ARCHIVED',
+  FAILED: 'FAILED',
+  CLOSED: 'CLOSED',
+  NEW: 'NEW',
+  PENDING: 'PENDING',
+  SIGNED: 'SIGNED',
+  UNSIGNED: 'UNSIGNED',
+  RESULT_READY: 'RESULT READY',
+  NEEDS_REVIEW: 'NNEEDS REVIEW',
+  REOPENED: 'REOPENED',
+  NEED_SUBMISSION: 'NEED SUBMISSION',
+  MULTISPECIALITY: 'MULTISPECIALITY',
+  CANCELLED: 'CANCELLED',
+  SCHEDULED: 'SCHEDULED',
+  CHECKED_IN: 'CHECKED_IN',
+  IN_EXAM: 'IN_EXAM',
+  SEEN: 'SEEN',
+  SIGNED_OFF: 'SIGNED_OFF',
+  NO_SHOW: 'NO_SHOW',
+  PROCESSED: 'PROCESSED',
+  REJECTED: 'REJECTED',
+  APPROVED: 'APPROVED',
+  DRAFT: 'DRAFT',
+  ASSIGNED: 'Assigned',
+  SUBMITTED: 'COMPLETED',
+  PRIMARY: 'PRIMARY',
+  NON_BILLABLE: 'NON BILLABLE',
+  BILLABLE_INSURANCE: 'BILLING (INSURANCE)',
+  BILLING_SELF_PAY: 'BILLING (SELF-PAY)',
+  UNPAID: 'UNPAID',
+  PAID: 'PAID',
+  READY_TO_CLAIM: 'READY TO CLAIM',
+};
+
+const typeColorMap = {
+  ACTIVE: '#00AF35',
+  INACTIVE: '#727272',
+  ARCHIVED: '#727272',
+  FAILED: '#CE0718',
+  CLOSED: '#979797',
+  NEW: '#004AB1',
+  PENDING: '#D66F00',
+  SIGNED: '#049B22',
+  UNSIGNED: '#727272',
+  NEED_RESULT: '#01C019',
+  RESULT_READY: '#01C019',
+  NEEDS_REVIEW: '#FFAA00',
+  REOPENED: '#1B5984',
+  NEED_SUBMISSION: '#233853',
+  NEW_PATIENT: '#00AF35',
+  MULTISPECIALITY: 'Primary.main',
+  SCHEDULED: '#4873B9',
+  CHECKED_IN: '#E59EFF',
+  IN_EXAM: '#9688FF',
+  SEEN: '#00B216',
+  SIGNED_OFF: '#FFC400',
+  CANCELLED: '#B42318',
+  NO_SHOW: '#767676',
+  PROCESSED: '#049B22',
+  REJECTED: '#B42318',
+  APPROVED: '#049B22',
+  DRAFT: '#D66F00',
+  ASSIGNED: '#D66F00',
+  SUBMITTED: '#00AF35',
+  PRIMARY: '#00AF35',
+  NON_BILLABLE: '#727272',
+  BILLABLE_INSURANCE: '#B42318',
+  BILLING_SELF_PAY: '#00AF35',
+  UNPAID: '#B42318',
+  READY_TO_CLAIM: '#D66F00',
+  PAID: '#00AF35',
+};
+
+const typeBackgroundMap = {
+  ACTIVE: '#D6FFE3',
+  INACTIVE: '#E9E9E9',
+  ARCHIVED: '#E9E9E9',
+  FAILED: '#FFF2F3',
+  CLOSED: '#F8F8F8',
+  NEW: '#F2F7FF',
+  PENDING: '#FFFBF2',
+  SIGNED: '#F4FFF2',
+  UNSIGNED: '#E9E9E9',
+  NEED_RESULT: '#FFFAF2',
+  RESULT_READY: '#F2FCF3',
+  NEEDS_REVIEW: '#FFFAF2',
+  REOPENED: '#E5F5FF',
+  NEED_SUBMISSION: '#E5F5FF',
+  NEW_PATIENT: '#D6FFE3',
+  MULTISPECIALITY: '#F0FAFF',
+  PROCESSED: '#F4FFF2',
+  CANCELLED: '#FEF3F2',
+  REJECTED: '#FEF3F2',
+  APPROVED: '#ECFDF3',
+  NO_SHOW: '#F2FCF3',
+  DRAFT: '#FFFBF2',
+  ASSIGNED: '#FFFBF2',
+  SUBMITTED: '#D6FFE3',
+  PRIMARY: '#D6FFE3',
+  NON_BILLABLE: '#E9E9E9',
+  BILLABLE_INSURANCE: '#FEF3F2',
+  BILLING_SELF_PAY: '#D6FFE3',
+  UNPAID: '#FEF3F2',
+  READY_TO_CLAIM: '#FFFBF2',
+  PAID: '#D6FFE3',
+};
+
+export const getColorByType = (type: StatusEnum) => {
+  return typeColorMap[type as keyof typeof typeColorMap];
+};
+
+export const getBackgroundByType = (type: StatusEnum) => {
+  return typeBackgroundMap[type as keyof typeof typeBackgroundMap];
+};

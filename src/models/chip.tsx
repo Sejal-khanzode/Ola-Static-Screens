@@ -71,7 +71,7 @@ export const statusLabels = {
   PRIMARY: 'Primary',
   NON_BILLABLE: 'Non billable',
   BILLABLE_INSURANCE: 'Billing (Insurance)',
-  BILLING_SELF_PAY: 'Billing (Self-Pay)',
+  BILLABLE_SELF_PAY: 'Billing (Self-Pay)',
   UNPAID: 'Unpaid',
   PAID: 'Paid',
   READY_TO_CLAIM: 'Ready To Claim',
@@ -110,12 +110,12 @@ export const statusLabelsUppercase = {
   PRIMARY: 'PRIMARY',
   NON_BILLABLE: 'NON BILLABLE',
   BILLABLE_INSURANCE: 'BILLING (INSURANCE)',
-  BILLING_SELF_PAY: 'BILLING (SELF-PAY)',
+  BILLABLE_SELF_PAY: 'BILLING (SELF-PAY)',
   UNPAID: 'UNPAID',
   PAID: 'PAID',
   READY_TO_CLAIM: 'READY TO CLAIM',
- ELIGIBLE: 'ELIGIBLE',
-  NOTE_ELIGIBLE:'NOT_ELIGIBLE'
+  ELIGIBLE: 'ELIGIBLE',
+  NOTE_ELIGIBLE: 'NOT_ELIGIBLE',
 };
 
 const typeColorMap = {
@@ -151,12 +151,12 @@ const typeColorMap = {
   PRIMARY: '#00AF35',
   NON_BILLABLE: '#727272',
   BILLABLE_INSURANCE: '#B42318',
-  BILLING_SELF_PAY: '#00AF35',
+  BILLABLE_SELF_PAY: '#00AF35',
   UNPAID: '#B42318',
   READY_TO_CLAIM: '#D66F00',
   PAID: '#00AF35',
-  NOT_ELIGIBLE:'#B1000F',
-  ELIGIBLE:'#5925DC'
+  NOT_ELIGIBLE: '#B1000F',
+  ELIGIBLE: '#5925DC',
 };
 
 const typeBackgroundMap = {
@@ -187,12 +187,12 @@ const typeBackgroundMap = {
   PRIMARY: '#D6FFE3',
   NON_BILLABLE: '#E9E9E9',
   BILLABLE_INSURANCE: '#FEF3F2',
-  BILLING_SELF_PAY: '#D6FFE3',
+  BILLABLE_SELF_PAY: '#D6FFE3',
   UNPAID: '#FEF3F2',
   READY_TO_CLAIM: '#FFFBF2',
   PAID: '#D6FFE3',
-  NOT_ELIGIBLE:'#FFF2F3',
-  ELIGIBLE:'#F4F3FF'
+  NOT_ELIGIBLE: '#FFF2F3',
+  ELIGIBLE: '#F4F3FF',
 };
 
 export const getColorByType = (type: StatusEnum) => {

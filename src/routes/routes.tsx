@@ -80,6 +80,9 @@ import BillingTabs from 'src/pages/apps/provider/components/billing/billingTabs'
 import Billing from 'src/pages/apps/provider/pages/billing/ready-for-billing/billing';
 import SuperBill from 'src/pages/apps/provider/pages/billing/superBill/super-bill';
 import CreateSuperbill from 'src/pages/apps/provider/pages/billing/superBill/create-super-bill';
+import Remits from 'src/pages/apps/provider/pages/billing/remits/remits';
+import Claims from 'src/pages/apps/provider/pages/billing/claims/claims';
+import Invoice from 'src/pages/apps/provider/pages/billing/invoice/invoice';
 
 export const routes: RouteObject[] = [
   { path: '/', element: <Navigate to={'/auth/login'} /> },
@@ -377,6 +380,18 @@ export const routes: RouteObject[] = [
           {
             path: 'superbill',
             element: <SuperBill />,
+          },
+           {
+            path: 'invoice',
+            element: <Invoice />,
+          },
+          {
+            path: 'claims',
+            element: <Claims />,
+          },
+          {
+            path: 'remits',
+            element: <Remits />,
           },
         ],
       },

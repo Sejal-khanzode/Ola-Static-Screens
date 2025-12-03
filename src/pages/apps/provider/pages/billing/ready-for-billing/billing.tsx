@@ -10,7 +10,7 @@ import { readyForBillingHeader } from 'src/components/core/reusable/headers/all-
 const Billing = () => {
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(15);
-  const [searchText, setSearchText] = useState('');
+  const [, setSearchText] = useState('');
 
   const billingMockData = [
     {

@@ -1,19 +1,11 @@
 import { Grid } from '@mui/material';
 import { useState } from 'react';
-import { SearchIcon } from 'src/assets/icons/searchIcon';
-import CustomDatePicker from 'src/components/core/reusable/custom-date-picker/custom-date-picker';
-import CustomInput from 'src/components/core/reusable/custom-input/custom-input';
-import CustomLabel from 'src/components/core/reusable/custom-label/custom-label';
 import CustomisedTable from 'src/components/core/reusable/custom-table/custom-table';
-import {
-  readyForBillingHeader,
-  superbillHeader,
-} from 'src/components/core/reusable/headers/all-headers';
+import { superbillHeader } from 'src/components/core/reusable/headers/all-headers';
 
 const SuperBill = () => {
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(15);
-  const [searchText, setSearchText] = useState('');
 
   const billingMockData = [
     {
@@ -30,9 +22,11 @@ const SuperBill = () => {
 
       status: 'PAID',
       action: [
-        { label: 'Generate Superbill', route: 'edit' },
-        { label: 'Change Status', route: 'archive' },
-        { label: 'View Summary', route: 'view' },
+        { label: 'Edit Bill', route: 'edit' },
+        { label: 'Print Bill', route: 'print' },
+        { label: 'Archive Bill', route: 'archive' },
+        { label: 'Download Bill', route: 'download' },
+        { label: 'View Ledger', route: 'view' },
       ],
     },
     {
@@ -49,9 +43,11 @@ const SuperBill = () => {
 
       status: 'READY_TO_CLAIM',
       action: [
-        { label: 'Generate Superbill', route: 'edit' },
-        { label: 'Change Status', route: 'archive' },
-        { label: 'View Summary', route: 'view' },
+        { label: 'Edit Bill', route: 'edit' },
+        { label: 'Print Bill', route: 'print' },
+        { label: 'Archive Bill', route: 'archive' },
+        { label: 'Download Bill', route: 'download' },
+        { label: 'View Ledger', route: 'view' },
       ],
     },
     {
@@ -68,9 +64,11 @@ const SuperBill = () => {
 
       status: 'UNPAID',
       action: [
-        { label: 'Generate Superbill', route: 'edit' },
-        { label: 'Change Status', route: 'archive' },
-        { label: 'View Summary', route: 'view' },
+        { label: 'Edit Bill', route: 'edit' },
+        { label: 'Print Bill', route: 'print' },
+        { label: 'Archive Bill', route: 'archive' },
+        { label: 'Download Bill', route: 'download' },
+        { label: 'View Ledger', route: 'view' },
       ],
     },
   ];

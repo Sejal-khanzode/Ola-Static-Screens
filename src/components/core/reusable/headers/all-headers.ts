@@ -433,7 +433,7 @@ export const superbillHeader: Header[] = [
   { id: 'patientName', label: 'Patient Name' },
   { id: 'renderingProvider', label: 'Rendering Provider' },
   { id: 'totalAmount', label: 'Total Amount' },
-  { id: 'insuranceBalance', label: 'InsuranceBalance' },
+  { id: 'insuranceBalance', label: 'Insurance Balance' },
   { id: 'patientPaid', label: 'Patient Paid' },
   { id: 'patientBalance', label: 'Patient Balance' },
   { id: 'status', label: 'Status', type: 'chip' },
@@ -449,9 +449,50 @@ export const diagocode: Header[] = [
 export const proceCode: Header[] = [
   { id: 'srn', label: 'Sr.No', type: 'text' },
   { id: 'procedure', label: 'Procedure Code', type: 'text' },
-    {id:'modifiers', label:'Modifiers'},
+  { id: 'modifiers', label: 'Modifiers' },
   { id: 'units', label: 'Units', type: 'text' },
   { id: 'amount', label: 'Amount ($)', type: 'text' },
   { id: 'subtotal', label: 'SubTotal ($)', type: 'text' },
+  { id: 'action', label: 'Action', type: 'actionButton' },
+];
+
+export const remits: Header[] = [
+  { id: 'era', label: 'ERA doc No', type: 'text' },
+  { id: 'eraDate', label: 'ERA Date', type: 'text' },
+  { id: 'eft', label: 'Check/EFT No.' },
+  { id: 'eftDate', label: 'Check/EFT Date', type: 'text' },
+  { id: 'payer', label: 'Payer', type: 'text' },
+  { id: 'amount', label: 'Amount ($)', type: 'text' },
+  { id: 'batchNo', label: 'Batch No.', type: 'text' },
+  { id: 'action', label: 'Action', type: 'actionButton' },
+];
+
+export const claims: Header[] = [
+  { id: 'claimId', label: 'Claim ID', type: 'text' },
+  { id: 'billDate', label: 'Bill Date', type: 'text' },
+  { id: 'dateOfService', label: 'Date of Service' },
+  { id: 'patientName', label: 'Patient Name', type: 'text' },
+  { id: 'payerName', label: 'Payer Name', type: 'text' },
+  { id: 'renderingProvider', label: 'Rendering Provider', type: 'text' },
+  { id: 'insuranceAmt', label: 'Insurance Amt', type: 'text' },
+  { id: 'patientAmt', label: 'Patient Amt', type: 'text' },
+    { id: 'updateOn', label: 'Update On' },
+
+  { id: 'secClaim', label: 'Sec Claim',  type: 'chip'},
+  { id: 'status', label: 'Status', },
+  { id: 'action', label: 'Action', type: 'actionButton' },
+];
+
+export const invoice: Header[] = [
+  { id: 'invoiceId', label: 'Invoice ID', type: 'text' },
+  { id: 'invoiceDate', label: 'Invoice Date', type: 'text' },
+  { id: 'mrn', label: 'MRN' },
+  { id: 'patientName', label: 'Patient Name', type: 'text' },
+  { id: 'encounterDate', label: 'Encounter Date', type: 'text' },
+  { id: 'billingProvider', label: 'Billing Provider', type: 'text' },
+  { id: 'amount', label: 'Amount', type: 'text' },
+  { id: 'payment', label: 'Payment' },
+  { id: 'due', label: 'Due' },
+  { id: 'status', label: 'Status', type:'chip' },
   { id: 'action', label: 'Action', type: 'actionButton' },
 ];

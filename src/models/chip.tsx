@@ -34,7 +34,9 @@ export type StatusEnum =
   | 'BILLABLE_SELF_PAY'
   | 'UNPAID'
   | 'READY_TO_CLAIM'
-  | 'PAID';
+  | 'PAID'
+  | 'ELIGIBLE'
+  | 'NOT_ELIGIBLE';
 
 export const statusLabels = {
   ACTIVE: 'Active',
@@ -73,6 +75,8 @@ export const statusLabels = {
   UNPAID: 'Unpaid',
   PAID: 'Paid',
   READY_TO_CLAIM: 'Ready To Claim',
+  ELIGIBLE: 'Eligible',
+  NOT_ELIGIBLE: 'Not Eligible',
 };
 
 export const statusLabelsUppercase = {
@@ -110,6 +114,8 @@ export const statusLabelsUppercase = {
   UNPAID: 'UNPAID',
   PAID: 'PAID',
   READY_TO_CLAIM: 'READY TO CLAIM',
+ ELIGIBLE: 'ELIGIBLE',
+  NOTE_ELIGIBLE:'NOT_ELIGIBLE'
 };
 
 const typeColorMap = {
@@ -149,6 +155,8 @@ const typeColorMap = {
   UNPAID: '#B42318',
   READY_TO_CLAIM: '#D66F00',
   PAID: '#00AF35',
+  NOT_ELIGIBLE:'#B1000F',
+  ELIGIBLE:'#5925DC'
 };
 
 const typeBackgroundMap = {
@@ -183,6 +191,8 @@ const typeBackgroundMap = {
   UNPAID: '#FEF3F2',
   READY_TO_CLAIM: '#FFFBF2',
   PAID: '#D6FFE3',
+  NOT_ELIGIBLE:'#FFF2F3',
+  ELIGIBLE:'#F4F3FF'
 };
 
 export const getColorByType = (type: StatusEnum) => {
